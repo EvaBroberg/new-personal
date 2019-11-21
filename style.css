@@ -1,7 +1,7 @@
 * {
   padding: 0;
   margin: 0;
- 
+  font-family: 'Montserrat', sans-serif;
 }
 
 img {
@@ -14,6 +14,23 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
   background-color: rgb(52, 58, 64);
+}
+
+p {
+  font-size: 1.6rem;
+}
+
+.col-lg-8.col-md-8.col-sm-12 {
+  padding: 0;
+}
+
+.col-lg-4.col-md-4.col-sm-12 {
+  padding: 0;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .parallax {
@@ -62,11 +79,13 @@ body, html {
 }
 
 .caption-about {
-  padding-top: 3.5rem;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .caption-about img {
-  display: none;
+  margin-top: 50px;
+  margin-bottom: 2px;
 }
 
 h2 {
@@ -87,17 +106,41 @@ h2 {
   /* display: none; */
 }
 
+.text h2 {
+  font-size: 2rem;
+}
+
+
 
 /*ABOUT*/
 
 .about-text {
   padding: 10px 15px;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.7);
 }
 
 .about-text p {
-  color: #111;
+  line-height: 2.3rem;
+  text-align: justify;
+  color: rgb(51, 42, 42);
+  font-weight: 400;
+}
+
+.about-text h1 {
+  font-weight: 700;
+  font-size: 4rem;
+  letter-spacing: 0.4rem;
+  color: #769199;
+  mix-blend-mode: difference;
+  opacity: .8;
+  text-align: center;
+}
+
+.about-text span {
+  font-weight: 600;
+  color: #2a462a;
+  font-size: 2rem;
 }
 
 /*WORK PAGE*/
@@ -162,8 +205,8 @@ h2 {
 }
 
 .form-wrapper {
-  width: 70%;
-  float: right;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .contact-part {
@@ -241,7 +284,7 @@ ul.navbar-nav {
 }
 
 
-@media only screen and (min-width: 576px) {
+@media only screen and (min-width: 992px) {
 
   .parallax {
     position: relative;
@@ -285,6 +328,7 @@ ul.navbar-nav {
   }
   
   .caption-about {
+    width: 80%;
     padding-top: 50px;
   }
 
@@ -316,10 +360,15 @@ ul.navbar-nav {
   .about-text {
     padding: 17px;
     background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 0px 0px 200px 0;
   }
   
   .about-text p {
     color: #111;
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
   }
   
   /*WORK PAGE*/
