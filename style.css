@@ -1,0 +1,469 @@
+* {
+  padding: 0;
+  margin: 0;
+ 
+}
+
+img {
+  max-width: 100%;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  background-color: rgb(52, 58, 64);
+}
+
+.parallax {
+  position: relative;
+  background-attachment: fixed;
+  background-position: center 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+
+
+/*PARALLAX*/
+
+.caption {
+  background-color: rgba(0,0,0, 0.3);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  
+  height: 100%;
+}
+
+
+.caption .border {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption-about {
+  padding-top: 3.5rem;
+}
+
+.caption-about img {
+  display: none;
+}
+
+h2 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: #777777;
+  text-align:center;
+  margin-bottom: 25px;
+}
+
+.text {
+  color: #777777;
+  background-color: rgb(52, 58, 64);
+  text-align: center;
+  padding: 30px 0px;
+  text-align: justify;
+  /* display: none; */
+}
+
+
+/*ABOUT*/
+
+.about-text {
+  padding: 10px 15px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.about-text p {
+  color: #111;
+}
+
+/*WORK PAGE*/
+
+
+
+
+/*PROGRESS BAR*/
+
+.myBar {
+  margin-top: 5px;
+}
+
+.language {
+  margin-top: 15px;
+}
+
+.coding-lan-icon {
+  margin-right: 10px;
+}
+
+.html, .css, .js, .py, .flask, .django, .react {
+  display: flex;
+}
+
+.language h2 {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+}
+
+.coding-lan-icon {
+  font-size: 2rem;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: rgba(187, 185, 185, 0.2);
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #3f5f3f;
+}
+
+.additional-tech {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.additional-tech i {
+  margin-right: 25px;
+}
+
+/*PROGRESS BAR END*/
+
+/*CONTACT FORM*/
+
+.contact-title {
+  margin-bottom: 30px; 
+}
+
+.form-wrapper {
+  width: 70%;
+  float: right;
+}
+
+.contact-part {
+  margin-top: 50px;
+}
+
+.btn-default {
+  color: rgb(158, 158, 158);
+  background-color: rgba(187, 185, 185, 0.2);
+}
+
+.btn-group {
+  margin-top: 20px;
+}
+
+.form-control {
+  opacity: .8;
+}
+
+.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+  border-radius: 3px;
+}
+
+.map {
+  border-radius: 7px;
+  -webkit-filter: grayscale(99%);
+  max-width: 100%;
+}
+
+/*CONTACT FORM END*/
+
+/*FOOTER*/
+
+.copyright-wrapper {
+  text-align: center;
+}
+
+.copyright {
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+
+.social-icons {
+  text-align: center;
+  margin: 50px 0 0 30px;
+}
+
+.social-icon {
+  margin: 25px 15px;
+  font-size: 1.7rem;
+}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+/*END PARALLAX*/
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+div#navbarNavDropdown {
+  position: relative;
+}
+
+ul.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+
+
+@media only screen and (min-width: 576px) {
+
+  .parallax {
+    position: relative;
+    background-attachment: fixed;
+    background-position: center 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80%;
+  }
+  
+  
+  /*PARALLAX*/
+  
+  .caption {
+    background-color: rgba(0,0,0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    
+    height: 100%;
+  }
+  
+  
+  .caption .border {
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+  }
+  
+  .caption-about {
+    padding-top: 50px;
+  }
+
+  .caption-about img {
+    display: block;
+  }
+  
+  h2 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font: 20px "Lato", sans-serif;
+    color: #777777;
+    text-align:center;
+    margin-bottom: 25px;
+  }
+  
+  .text {
+    display: block;
+    color: #777777;
+    background-color: rgb(52, 58, 64);
+    text-align: center;
+    padding: 30px 0px;
+    text-align: justify;
+  }
+  
+  
+  /*ABOUT*/
+  
+  .about-text {
+    padding: 17px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .about-text p {
+    color: #111;
+  }
+  
+  /*WORK PAGE*/
+  
+  .card {
+    margin-top: 20px;
+}
+  
+  
+  
+  /*PROGRESS BAR*/
+  
+  .myBar {
+    margin-top: 5px;
+  }
+  
+  .language {
+    margin-top: 15px;
+  }
+  
+  .coding-lan-icon {
+    margin-right: 10px;
+  }
+  
+  .html, .css, .js, .py, .flask, .django, .react {
+    display: flex;
+  }
+  
+  .language h2 {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    margin-right: 10px;
+  }
+  
+  .coding-lan-icon {
+    font-size: 2rem;
+  }
+  
+  #myProgress {
+    width: 100%;
+    background-color: rgba(187, 185, 185, 0.2);
+  }
+  
+  #myBar {
+    width: 1%;
+    height: 30px;
+    background-color: #3f5f3f;
+  }
+  
+  .additional-tech {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  .additional-tech i {
+    margin-right: 25px;
+  }
+  
+  /*PROGRESS BAR END*/
+  
+  /*CONTACT FORM*/
+  
+  .contact-title {
+    margin-bottom: 30px; 
+  }
+  
+  .form-wrapper {
+    width: 70%;
+    float: right;
+  }
+  
+  .contact-part {
+    margin-top: 50px;
+  }
+  
+  .btn-default {
+    color: rgb(158, 158, 158);
+    background-color: rgba(187, 185, 185, 0.2);
+  }
+  
+  .btn-group {
+    margin-top: 20px;
+  }
+  
+  .form-control {
+    opacity: .8;
+  }
+  
+  .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
+    border-radius: 3px;
+  }
+  
+  .map {
+    border-radius: 7px;
+    -webkit-filter: grayscale(99%);
+    max-width: 100%;
+  }
+  
+  /*CONTACT FORM END*/
+  
+  /*FOOTER*/
+  
+  .copyright-wrapper {
+    text-align: center;
+  }
+  
+  .copyright {
+    font-size: 0.7rem;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    text-align: center;
+    margin: 50px 0 0 30px;
+  }
+  
+  .social-icon {
+    margin: 25px 15px;
+    font-size: 1.7rem;
+  }
+  
+  /* Turn off parallax scrolling for tablets and phones */
+  @media only screen and (max-device-width: 1024px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }
+  
+  /*END PARALLAX*/
+  
+  .navbar {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+  }
+  
+  div#navbarNavDropdown {
+    position: relative;
+  }
+  
+  ul.navbar-nav {
+    position: absolute;
+    right: 0;
+  }
+
+}
+
