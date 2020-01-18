@@ -15,4 +15,11 @@ $('.form-wrapper button.submit').click(function(e){
     e.preventDefault();
 });
 
-//PROGRESS BARS
+//scale parallx
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+	$(".zoom img").css({
+		transform: 'translate3d(-50%, -'+(scroll/100)+'%, 0) scale('+(100 + scroll/10)/100+')',
+	});
+});

@@ -1,19 +1,39 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'WASK_NEW', sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.bg-dark {
+  /* background-color: #0a0c0b!important; */
+  opacity: .7;
+}
+
+@font-face { font-family: WASK_NEW_BOLD_ITALIC; src: url('assets/fonts/WASK NEW BOLD ITALIC.OTF'); }
+@font-face { font-family: WASK_NEW_BOLD; src: url('assets/fonts/WASK NEW BOLD.OTF'); } 
+@font-face { font-family: WASK_NEW_ITALIC; src: url('assets/fonts/WASK NEW ITALIC.OTF'); }
+@font-face { font-family: WASK_NEW; src: url('assets/fonts/WASK NEW.OTF'); }
+@font-face { font-family: wask_new_webfont; src: url('assets/fonts/wask_new-webfont.eot'); }
+
+a {
+  color: inherit;
 }
 
 img {
   max-width: 100%;
 }
 
+
 body, html {
   height: 100%;
   margin: 0;
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
-  background-color: rgb(52, 58, 64);
+  background-color:#0a0c0b;
 }
 
 p {
@@ -39,6 +59,86 @@ p {
   background-position: center 0;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+#parallax-1 {
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+#parallax-2 {
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+
+#parallax-4 {
+  transform-origin: top left;
+}
+
+.zoom{
+  overflow: hidden;
+}
+
+.zoom2 {
+  position: absolute;
+  top: 0;
+  max-height: 37%;
+}
+
+.zoom3 {
+  max-height: 100%;
+}
+
+.zoom img{
+  position: fixed;
+  top: 0%;
+  left: 50%;
+  max-width: 200%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+
+.zoom2 img {
+  position: relative;
+
+}
+
+.resume {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  transform: skewY(6deg);
+  text-align: center;
+}
+
+.resume h1 {
+  font-family: 'WASK_NEW_BOLD', sans-serif;
+  letter-spacing: 0.4rem;
+  color: rgba(166, 184, 159, 0.4);
+}
+
+.resume h3 {
+  letter-spacing: 0.1rem;
+  font-weight: bold;
+  color:  rgba(189, 190, 188, 0.5);
+}
+
+.resume p {
+  letter-spacing: 0.1rem;
+  line-height: 1.5rem;
+}
+
+.education-block {
+  line-height: 1rem;
+  margin-bottom: 30px;
+}
+
+.experience-block {
+  line-height: 1rem;
+  margin-bottom: 30px;
+}
+
+.exp {
+  margin-top: 30px;
 }
 
 .container-fluid {
@@ -88,6 +188,11 @@ p {
   margin-bottom: 2px;
 }
 
+.card {
+  margin-top: 30px;
+  /* transform: skewY(-6deg); */
+}
+
 h2 {
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -99,420 +204,337 @@ h2 {
 
 .text {
   color: #777777;
-  background-color: rgb(52, 58, 64);
+  background-color:#0a0c0b;
   text-align: center;
   padding: 30px 0px;
   text-align: justify;
-  /* display: none; */
 }
 
-.text h2 {
-  font-size: 2rem;
+.text p {
+  line-height: 1.8rem;
+  letter-spacing: 0.02rem;
+  font-size: 1.5rem;
+  padding-bottom: 200px;
 }
 
-
-
-/*ABOUT*/
-
-.about-text {
-  padding: 10px 15px;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.7);
+.cod-lang {
+  transform: skewY(6deg);
 }
+/* 
+.cod-lang h2 {
+  transform: skewY(6deg);
+  margin-top: 30px;
+  } */
 
-.about-text p {
-  line-height: 2.3rem;
-  text-align: justify;
-  color: rgb(51, 42, 42);
-  font-weight: 400;
-}
+  /*intro*/
 
-.about-text h1 {
-  font-weight: 700;
-  font-size: 4rem;
-  letter-spacing: 0.4rem;
-  color: #769199;
-  mix-blend-mode: difference;
-  opacity: .8;
-  text-align: center;
-}
-
-.about-text span {
-  font-weight: 600;
-  color: #2a462a;
-  font-size: 2rem;
-}
-
-/*WORK PAGE*/
-
-
-
-
-/*PROGRESS BAR*/
-
-.myBar {
-  margin-top: 5px;
-}
-
-.language {
-  margin-top: 15px;
-}
-
-.coding-lan-icon {
-  margin-right: 10px;
-}
-
-.html, .css, .js, .py, .flask, .django, .react {
-  display: flex;
-}
-
-.language h2 {
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-  margin-right: 10px;
-}
-
-.coding-lan-icon {
-  font-size: 2rem;
-}
-
-#myProgress {
-  width: 100%;
-  background-color: rgba(187, 185, 185, 0.2);
-}
-
-#myBar {
-  width: 1%;
-  height: 30px;
-  background-color: #3f5f3f;
-}
-
-.additional-tech {
-  text-align: center;
-  font-size: 2rem;
-}
-
-.additional-tech i {
-  margin-right: 25px;
-}
-
-/*PROGRESS BAR END*/
-
-/*CONTACT FORM*/
-
-.contact-title {
-  margin-bottom: 30px; 
-}
-
-.form-wrapper {
-  width: 90%;
-  margin: 0 auto;
-}
-
-.contact-part {
-  margin-top: 50px;
-}
-
-.btn-default {
-  color: rgb(158, 158, 158);
-  background-color: rgba(187, 185, 185, 0.2);
-}
-
-.btn-group {
-  margin-top: 20px;
-}
-
-.form-control {
-  opacity: .8;
-}
-
-.input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
-  border-radius: 3px;
-}
-
-.map {
-  border-radius: 7px;
-  -webkit-filter: grayscale(99%);
-  max-width: 100%;
-}
-
-/*CONTACT FORM END*/
-
-/*FOOTER*/
-
-.copyright-wrapper {
-  text-align: center;
-}
-
-.copyright {
-  font-size: 0.7rem;
-  margin-bottom: 20px;
-}
-
-.social-icons {
-  text-align: center;
-  margin: 50px 0 0 30px;
-}
-
-.social-icon {
-  margin: 25px 15px;
-  font-size: 1.7rem;
-}
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-  .parallax {
-    background-attachment: scroll;
-  }
-}
-
-/*END PARALLAX*/
-
-.navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 999;
-}
-
-div#navbarNavDropdown {
-  position: relative;
-}
-
-ul.navbar-nav {
-  position: absolute;
-  right: 0;
-}
-
-
-@media only screen and (min-width: 992px) {
-
-  .parallax {
-    position: relative;
-    background-attachment: fixed;
-    background-position: center 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 80%;
-  }
-  
-  
-  /*PARALLAX*/
-  
-  .caption {
-    background-color: rgba(0,0,0, 0.3);
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    
-    height: 100%;
-  }
-  
-  
-  .caption .border {
-    background-color: #111;
-    color: #fff;
-    padding: 18px;
-    font-size: 25px;
-    letter-spacing: 10px;
-  }
-  
-  .caption-about {
-    width: 80%;
-    padding-top: 50px;
-  }
-
-  .caption-about img {
-    display: block;
-  }
-  
-  h2 {
-    letter-spacing: 5px;
-    text-transform: uppercase;
-    font: 20px "Lato", sans-serif;
-    color: #777777;
-    text-align:center;
-    margin-bottom: 25px;
-  }
-  
-  .text {
-    display: block;
-    color: #777777;
-    background-color: rgb(52, 58, 64);
+  .intro {
     text-align: center;
-    padding: 30px 0px;
-    text-align: justify;
+    margin-top: 150px;
+    margin-bottom: 100px;
+    transform: skewY(6deg);
   }
-  
-  
-  /*ABOUT*/
-  
-  .about-text {
-    padding: 17px;
-    background-color: rgba(255, 255, 255, 0.5);
-    border-radius: 0px 0px 200px 0;
+
+  .intro h1 {
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 6rem;
+    letter-spacing: 0.2rem;
+    line-height: 3.5rem;
   }
-  
-  .about-text p {
-    color: #111;
-    font-size: 1.5rem;
-    font-weight: 500;
+
+  .intro p {
+    font-size: 1rem;
+    font-size: 1.2rem;
+    letter-spacing: 0.4rem;
+  }
+
+  .cod-lang{
+    margin-top: 50px;
+  }
+
+  .about-content h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+  }
+
+  .work-wrapper { 
+    transform: skewY(6deg);
+    margin: 0 300px;
+  }
+
+  .work-wrapper h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    margin: 50px 0 30px 0;
+  }
+
+  .work-wrapper h2 {
+    display: flex;
+    justify-content: center;
+    font-family: 'WASK_NEW', sans-serif;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.2rem;
+    margin: 20px 0 0 0;
+  }
+
+  .work-wrapper p {
+    display: flex;
+    justify-content: center;
+    font-size: 1.6rem;
+    letter-spacing: 1px;
     line-height: 2.5rem;
-    letter-spacing: 0.1rem;
+    margin-bottom: 30px;
   }
-  
-  /*WORK PAGE*/
-  
-  .card {
-    margin-top: 20px;
-}
-  
-  
-  
+
+
+
+
+
   /*PROGRESS BAR*/
-  
+
   .myBar {
     margin-top: 5px;
   }
-  
+
   .language {
     margin-top: 15px;
   }
-  
+
   .coding-lan-icon {
     margin-right: 10px;
   }
-  
+
   .html, .css, .js, .py, .flask, .django, .react {
     display: flex;
   }
-  
+
   .language h2 {
     font-size: 1rem;
     letter-spacing: 0.5px;
     margin-right: 10px;
   }
-  
+
   .coding-lan-icon {
     font-size: 2rem;
   }
-  
+
   #myProgress {
     width: 100%;
     background-color: rgba(187, 185, 185, 0.2);
   }
-  
+
   #myBar {
     width: 1%;
     height: 30px;
     background-color: #3f5f3f;
   }
-  
+
   .additional-tech {
     text-align: center;
     font-size: 2rem;
   }
-  
+
   .additional-tech i {
     margin-right: 25px;
   }
-  
+
+  .work-wrapper {
+    padding-bottom: 30px;
+  }
+
+/* .work-image {
+  max-height: 150px;
+}
+
+.work-mage img {
+  background-size: cover;
+  } */
+
   /*PROGRESS BAR END*/
-  
+
   /*CONTACT FORM*/
-  
-  .contact-title {
-    margin-bottom: 30px; 
-  }
-  
-  .form-wrapper {
-    width: 70%;
-    float: right;
-  }
-  
-  .contact-part {
+
+  .contact-details {
+    text-align: center;
     margin-top: 50px;
   }
-  
-  .btn-default {
-    color: rgb(158, 158, 158);
-    background-color: rgba(187, 185, 185, 0.2);
-  }
-  
-  .btn-group {
-    margin-top: 20px;
-  }
-  
-  .form-control {
-    opacity: .8;
-  }
-  
-  .input-group>.custom-select:not(:first-child), .input-group>.form-control:not(:first-child) {
-    border-radius: 3px;
-  }
-  
-  .map {
-    border-radius: 7px;
-    -webkit-filter: grayscale(99%);
-    max-width: 100%;
-  }
-  
+
   /*CONTACT FORM END*/
-  
+
   /*FOOTER*/
-  
+
+  footer {
+  }
+
   .copyright-wrapper {
     text-align: center;
   }
-  
+
   .copyright {
-    font-size: 0.7rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem;
+    margin-top: 50px;
+    margin-bottom: 10px;
   }
-  
+
   .social-icons {
     text-align: center;
     margin: 50px 0 0 30px;
   }
-  
+
   .social-icon {
     margin: 25px 15px;
     font-size: 1.7rem;
   }
-  
-  /* Turn off parallax scrolling for tablets and phones */
-  @media only screen and (max-device-width: 1024px) {
-    .parallax {
-      background-attachment: scroll;
-    }
+
+  .social-icons, .contact-details {
+    margin-top: 200px;
   }
-  
+
+  .social-icons {
+    float: left;
+  }
+
+  .contact-details {
+    float: right;
+  }
+
   /*END PARALLAX*/
-  
+
   .navbar {
     position: fixed;
     width: 100%;
     z-index: 999;
   }
-  
+
+  .navbar-brand {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+
   div#navbarNavDropdown {
     position: relative;
   }
-  
+
   ul.navbar-nav {
     position: absolute;
     right: 0;
   }
 
+  .footer-content {
+   transform: skewY(6deg);
+
+ }
+
+ .copyRight-content {
+   transform: skewY(6deg);
+ }
+
+
+ /* Turn off parallax scrolling for tablets and phones */
+ @media only screen and (max-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
 }
+
+@media only screen and (min-width: 1024px) {
+
+  a.nav-link {
+    /* font-family: 'Nanum Gothic', sans-serif; */
+    text-transform: lowercase;
+    letter-spacing: 0.3rem;
+    margin: 30px 10px;
+    font-size: 1.5rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem;
+    margin-left: 10px;
+  }
+
+  #parallax-1 {
+    overflow: hidden;
+    min-height: 70vh;
+    top: -5em;
+  }
+
+  .caption {
+    background-color: rgba(0,0,0, 0.5);
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .intro h1 {
+    font-size: 10rem;
+    letter-spacing: 1.5rem;
+    line-height: 7rem; 
+  }
+
+  .intro p {
+    font-size: 2.5rem;
+    letter-spacing: 0.7rem;
+
+  }
+
+  .about-content {
+    margin: 0 300px;
+  }
+
+  .text {
+    float: left;
+    padding-right: 15px;
+  }
+
+  .personal_image {
+    max-width: 500px;
+    height: auto;
+    float: right;
+    margin-bottom: 50px;
+    padding-left: 15px;
+  }
+
+  .text p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.1rem;
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+/* .text {
+  min-height: 50vh;
+  } */
+
+
+  .intro {
+    margin-top: 24em;
+  }
+
+  .card {
+    margin: 10px;
+  }
+
+  .cod-lang {
+    padding-top: 11em;
+    padding-bottom: 4em;
+  }
+
+  #parallax-4 {
+   position: relative;
+ }
+
+
+
+ h1.exp {
+
+  margin-top: 0;
+
+}
+
+}
+
 
