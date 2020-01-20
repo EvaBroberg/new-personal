@@ -40,6 +40,10 @@ p {
   font-size: 1.6rem;
 }
 
+.personal_image {
+  display: none;
+}
+
 .col-lg-8.col-md-8.col-sm-12 {
   padding: 0;
 }
@@ -86,7 +90,8 @@ p {
 }
 
 .zoom3 {
-  max-height: 100%;
+    max-height: 100%;
+    padding-bottom: 28em;
 }
 
 .zoom img{
@@ -104,28 +109,59 @@ p {
 }
 
 .resume {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  transform: skewY(6deg);
-  text-align: center;
+    transform: skewY(6deg);
+    margin-left: 2.5em;
+    margin-top: 3em;
+    display: flex;
 }
 
-.resume h1 {
-  font-family: 'WASK_NEW_BOLD', sans-serif;
-  letter-spacing: 0.4rem;
-  color: rgba(166, 184, 159, 0.4);
+.resume img {
+    width: 7em;
+    margin-top: 3em;
+    margin-right: 1em;
 }
 
-.resume h3 {
-  letter-spacing: 0.1rem;
-  font-weight: bold;
-  color:  rgba(189, 190, 188, 0.5);
+.experience {
+    margin-top: 6.5em;
 }
 
-.resume p {
-  letter-spacing: 0.1rem;
-  line-height: 1.5rem;
+.exp {
+  margin-top: 30px;
+  line-height: 22px;
 }
+
+.exp h2 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #5c775c;
+    letter-spacing: 0.1rem;
+}
+
+.exp p {
+  margin: 0;
+  padding: 0;
+}
+
+.exp19 {
+    margin-top: 17px;
+}
+
+.exp17 {
+    margin-top: 4.5em;
+}
+
+.exp16 {
+    margin-top: 5.5em;
+    margin-bottom: 4em;
+}
+
+.exp13 {
+    margin-top: 17px;
+}
+
+
+
 
 .education-block {
   line-height: 1rem;
@@ -135,10 +171,6 @@ p {
 .experience-block {
   line-height: 1rem;
   margin-bottom: 30px;
-}
-
-.exp {
-  margin-top: 30px;
 }
 
 .container-fluid {
@@ -183,13 +215,9 @@ p {
   margin: 0 auto;
 }
 
-.caption-about img {
-  margin-top: 50px;
-  margin-bottom: 2px;
-}
 
 .card {
-  margin-top: 30px;
+  margin: 20px;
   /* transform: skewY(-6deg); */
 }
 
@@ -208,234 +236,225 @@ h2 {
   text-align: center;
   padding: 30px 0px;
   text-align: justify;
+  transform: skewY(-6deg);
 }
 
 .text p {
   line-height: 1.8rem;
   letter-spacing: 0.02rem;
   font-size: 1.5rem;
-  padding-bottom: 200px;
+  padding-bottom: 30px;
+  transform: skewY(6deg);
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.text h1 {
+  transform: skewY(6deg);
 }
 
 .cod-lang {
   transform: skewY(6deg);
 }
-/* 
-.cod-lang h2 {
+
+.intro {
+  text-align: center;
+  margin-top: 125px;
+  margin-bottom: 100px;
   transform: skewY(6deg);
-  margin-top: 30px;
-  } */
-
-  /*intro*/
-
-  .intro {
-    text-align: center;
-    margin-top: 150px;
-    margin-bottom: 100px;
-    transform: skewY(6deg);
-  }
-
-  .intro h1 {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 6rem;
-    letter-spacing: 0.2rem;
-    line-height: 3.5rem;
-  }
-
-  .intro p {
-    font-size: 1rem;
-    font-size: 1.2rem;
-    letter-spacing: 0.4rem;
-  }
-
-  .cod-lang{
-    margin-top: 50px;
-  }
-
-  .about-content h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    letter-spacing: 2px;
-  }
-
-  .work-wrapper { 
-    transform: skewY(6deg);
-    margin: 0 300px;
-  }
-
-  .work-wrapper h1 {
-    display: flex;
-    justify-content: center;
-    font-size: 3rem;
-    letter-spacing: 2px;
-    margin: 50px 0 30px 0;
-  }
-
-  .work-wrapper h2 {
-    display: flex;
-    justify-content: center;
-    font-family: 'WASK_NEW', sans-serif;
-    font-size: 2rem;
-    letter-spacing: 2px;
-    line-height: 1.2rem;
-    margin: 20px 0 0 0;
-  }
-
-  .work-wrapper p {
-    display: flex;
-    justify-content: center;
-    font-size: 1.6rem;
-    letter-spacing: 1px;
-    line-height: 2.5rem;
-    margin-bottom: 30px;
-  }
-
-
-
-
-
-  /*PROGRESS BAR*/
-
-  .myBar {
-    margin-top: 5px;
-  }
-
-  .language {
-    margin-top: 15px;
-  }
-
-  .coding-lan-icon {
-    margin-right: 10px;
-  }
-
-  .html, .css, .js, .py, .flask, .django, .react {
-    display: flex;
-  }
-
-  .language h2 {
-    font-size: 1rem;
-    letter-spacing: 0.5px;
-    margin-right: 10px;
-  }
-
-  .coding-lan-icon {
-    font-size: 2rem;
-  }
-
-  #myProgress {
-    width: 100%;
-    background-color: rgba(187, 185, 185, 0.2);
-  }
-
-  #myBar {
-    width: 1%;
-    height: 30px;
-    background-color: #3f5f3f;
-  }
-
-  .additional-tech {
-    text-align: center;
-    font-size: 2rem;
-  }
-
-  .additional-tech i {
-    margin-right: 25px;
-  }
-
-  .work-wrapper {
-    padding-bottom: 30px;
-  }
-
-/* .work-image {
-  max-height: 150px;
 }
 
-.work-mage img {
-  background-size: cover;
-  } */
 
-  /*PROGRESS BAR END*/
+.intro h1 {
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+  line-height: 3.5rem;
+}
 
-  /*CONTACT FORM*/
+.intro p {
+  font-size: 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.4rem;
+}
 
-  .contact-details {
-    text-align: center;
-    margin-top: 50px;
-  }
+.cod-lang{
+  margin-top: 50px;
+}
 
-  /*CONTACT FORM END*/
+.about-content h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
 
-  /*FOOTER*/
+.work-wrapper { 
+  transform: skewY(6deg);
+  max-width: 100%;
+}
 
-  footer {
-  }
+.work-wrapper h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 50px 0 30px 0;
+}
 
-  .copyright-wrapper {
-    text-align: center;
-  }
+.work-wrapper h2 {
+  display: flex;
+  justify-content: center;
+  font-family: 'WASK_NEW', sans-serif;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  line-height: 1.2rem;
+  margin: 20px 0 0 0;
+}
 
-  .copyright {
-    font-size: 1.2rem;
-    margin-top: 50px;
-    margin-bottom: 10px;
-  }
-
-  .social-icons {
-    text-align: center;
-    margin: 50px 0 0 30px;
-  }
-
-  .social-icon {
-    margin: 25px 15px;
-    font-size: 1.7rem;
-  }
-
-  .social-icons, .contact-details {
-    margin-top: 200px;
-  }
-
-  .social-icons {
-    float: left;
-  }
-
-  .contact-details {
-    float: right;
-  }
-
-  /*END PARALLAX*/
-
-  .navbar {
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-  }
-
-  .navbar-brand {
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-
-  div#navbarNavDropdown {
-    position: relative;
-  }
-
-  ul.navbar-nav {
-    position: absolute;
-    right: 0;
-  }
-
-  .footer-content {
-   transform: skewY(6deg);
-
- }
-
- .copyRight-content {
-   transform: skewY(6deg);
- }
+.work-wrapper p {
+  display: flex;
+  justify-content: center;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+  line-height: 2.5rem;
+  margin-bottom: 30px;
+}
 
 
- /* Turn off parallax scrolling for tablets and phones */
- @media only screen and (max-width: 1024px) {
+
+
+
+/*PROGRESS BAR*/
+
+.myBar {
+  margin-top: 5px;
+}
+
+.language {
+  margin-top: 15px;
+}
+
+.coding-lan-icon {
+  margin-right: 10px;
+}
+
+.html, .css, .js, .py, .flask, .django, .react {
+  display: flex;
+}
+
+.language h2 {
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+  margin-right: 10px;
+}
+
+.coding-lan-icon {
+  font-size: 2rem;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: rgba(187, 185, 185, 0.2);
+}
+
+#myBar {
+  width: 1%;
+  height: 30px;
+  background-color: #3f5f3f;
+}
+
+.additional-tech {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.additional-tech i {
+  margin-right: 25px;
+}
+
+.work-wrapper {
+  padding-bottom: 30px;
+}
+
+.contact-details {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.contact-details h2 {
+  margin-bottom: 0;
+}
+
+
+
+footer {
+}
+
+.copyright-wrapper {
+  text-align: center;
+}
+
+.copyright {
+  font-size: 1.2rem;
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  text-align: center;
+  margin: 50px 0 0 0;
+}
+
+
+.social-icon {
+  margin: 25px 15px;
+  font-size: 1.7rem;
+}
+
+
+
+
+/*END PARALLAX*/
+
+button.navbar-toggler {
+  border: none;
+}
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+div#navbarNavDropdown {
+  position: relative;
+}
+
+ul.navbar-nav {
+  position: absolute;
+  right: 0;
+}
+
+.footer-content {
+ transform: skewY(6deg);
+
+}
+
+.copyRight-content {
+ transform: skewY(6deg);
+}
+
+
+
+
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-width: 1024px) {
   .parallax {
     background-attachment: scroll;
   }
@@ -468,6 +487,7 @@ h2 {
     padding-left: 20px;
   }
 
+
   .intro h1 {
     font-size: 10rem;
     letter-spacing: 1.5rem;
@@ -490,6 +510,7 @@ h2 {
   }
 
   .personal_image {
+    display: block;
     max-width: 500px;
     height: auto;
     float: right;
@@ -502,17 +523,21 @@ h2 {
     line-height: 2.5rem;
     letter-spacing: 0.1rem;
     margin-top: 40px;
-    margin-bottom: 100px;
+    padding-bottom: 200px;
   }
 
-/* .text {
-  min-height: 50vh;
-  } */
-
+  .caption-about img {
+    margin-top: 50px;
+  }
 
   .intro {
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 100px;
+    transform: skewY(6deg);
     margin-top: 24em;
   }
+  
 
   .card {
     margin: 10px;
@@ -527,14 +552,27 @@ h2 {
    position: relative;
  }
 
-
-
  h1.exp {
 
   margin-top: 0;
 
 }
 
+.work-wrapper { 
+  margin: 0 300px;
 }
+
+
+.contact-details {
+  float: right;
+}
+
+.social-icons, .contact-details {
+  margin-top: 200px;
+}
+
+.social-icons {
+  float: left;
+  margin: 50px 0 0 30px;
 
 
