@@ -21,6 +21,7 @@ body {
 
 a {
   color: inherit;
+  text-transform: uppercase;
 }
 
 img {
@@ -90,8 +91,8 @@ p {
 }
 
 .zoom3 {
-    max-height: 100%;
-    padding-bottom: 28em;
+  max-height: 100%;
+  padding-bottom: 28em;
 }
 
 .zoom img{
@@ -108,21 +109,25 @@ p {
 
 }
 
+.resumeDesktop{
+  display: none;
+}
+
 .resume {
-    transform: skewY(6deg);
-    margin-left: 2.5em;
-    margin-top: 3em;
-    display: flex;
+  transform: skewY(6deg);
+  margin-left: 2.5em;
+  margin-top: 3em;
+  display: flex;
 }
 
 .resume img {
-    width: 7em;
-    margin-top: 3em;
-    margin-right: 1em;
+  width: 7em;
+  margin-top: 3em;
+  margin-right: 1em;
 }
 
 .experience {
-    margin-top: 6.5em;
+  margin-top: 6.5em;
 }
 
 .exp {
@@ -131,11 +136,11 @@ p {
 }
 
 .exp h2 {
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    color: #5c775c;
-    letter-spacing: 0.1rem;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  color: #5c775c;
+  letter-spacing: 0.1rem;
 }
 
 .exp p {
@@ -144,20 +149,20 @@ p {
 }
 
 .exp19 {
-    margin-top: 17px;
+  margin-top: 17px;
 }
 
 .exp17 {
-    margin-top: 4.5em;
+  margin-top: 4.5em;
 }
 
 .exp16 {
-    margin-top: 5.5em;
-    margin-bottom: 4em;
+  margin-top: 5.5em;
+  margin-bottom: 4em;
 }
 
 .exp13 {
-    margin-top: 17px;
+  margin-top: 17px;
 }
 
 
@@ -242,7 +247,7 @@ h2 {
 .text p {
   line-height: 1.8rem;
   letter-spacing: 0.02rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   padding-bottom: 30px;
   transform: skewY(6deg);
   margin-right: 20px;
@@ -259,8 +264,8 @@ h2 {
 
 .intro {
   text-align: center;
-  margin-top: 125px;
-  margin-bottom: 100px;
+  margin-top: 10.5em;
+  margin-bottom: 4em;
   transform: skewY(6deg);
 }
 
@@ -273,8 +278,7 @@ h2 {
 }
 
 .intro p {
-  font-size: 1rem;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.4rem;
 }
 
@@ -436,9 +440,109 @@ div#navbarNavDropdown {
 }
 
 ul.navbar-nav {
-  position: absolute;
   right: 0;
 }
+
+.navbar-dark {
+  background-color: rgba(0,0,0,.8);
+}
+
+/*NAVBAR*/
+
+.navbar-dark {
+  background-color: rgba(0,0,0,.8);
+}
+
+a.nav-link {
+  font-size: 1.5rem;
+}
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: #fff;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+  transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+  transition: ease all .2s;
+}
+
+.sec-accent {
+  background-color: #fafcf5;
+}
+
+.blue {
+  background-color: #9999cc;
+}
+
+
+.navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-brand {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+div#navbarNavDropdown {
+  position: relative;
+}
+
+
+ul.navbar-nav {
+
+  text-align: right;
+}
+
+/*ENDNAVBAR*/
 
 .footer-content {
  transform: skewY(6deg);
@@ -472,7 +576,7 @@ ul.navbar-nav {
 
   .navbar-brand {
     font-size: 1.5rem;
-    margin-left: 10px;
+    margin-left: 1em;
   }
 
   #parallax-1 {
@@ -495,7 +599,7 @@ ul.navbar-nav {
   }
 
   .intro p {
-    font-size: 2.5rem;
+    font-size: 3rem;
     letter-spacing: 0.7rem;
 
   }
@@ -574,5 +678,20 @@ ul.navbar-nav {
 .social-icons {
   float: left;
   margin: 50px 0 0 30px;
+}
 
+ul.navbar-nav {
+  position: absolute;
+  margin-right: 3em;
+}
+
+.resume {
+  display: none;
+}
+
+.resumeDesktop {
+  display: block;
+}
+
+}
 
