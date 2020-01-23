@@ -5,6 +5,8 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   overflow-x: hidden;
 }
 
@@ -24,6 +26,11 @@ a {
   text-transform: uppercase;
 }
 
+a:hover {
+  color:#5c775c;
+  text-decoration: underline;
+}
+
 img {
   max-width: 100%;
 }
@@ -39,6 +46,14 @@ body, html {
 
 p {
   font-size: 1.6rem;
+}
+
+.zoom {
+  transition: transform 0.5s;
+ }
+
+.zoom:hover {
+  transform: scale(1.5);
 }
 
 .personal_image {
@@ -106,7 +121,7 @@ p {
 
 .zoom2 img {
   position: relative;
-
+  
 }
 
 .resumeDesktop{
@@ -166,8 +181,6 @@ p {
 }
 
 
-
-
 .education-block {
   line-height: 1rem;
   margin-bottom: 30px;
@@ -220,6 +233,11 @@ p {
   margin: 0 auto;
 }
 
+.about-section-form {
+  text-align: center;
+  margin-bottom: 4em;
+}
+
 
 .card {
   margin: 20px;
@@ -232,14 +250,12 @@ h2 {
   font: 20px "Lato", sans-serif;
   color: #777777;
   text-align:center;
-  margin-bottom: 25px;
 }
 
 .text {
   color: #777777;
   background-color:#0a0c0b;
   text-align: center;
-  padding: 30px 0px;
   text-align: justify;
   transform: skewY(-6deg);
 }
@@ -247,7 +263,7 @@ h2 {
 .text p {
   line-height: 1.8rem;
   letter-spacing: 0.02rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   padding-bottom: 30px;
   transform: skewY(6deg);
   margin-right: 20px;
@@ -264,34 +280,53 @@ h2 {
 
 .intro {
   text-align: center;
-  margin-top: 10.5em;
-  margin-bottom: 4em;
+  margin-top: 8em;
+  margin-bottom: 0em;
   transform: skewY(6deg);
 }
 
 
 .intro h1 {
   color: rgba(255, 255, 255, 0.3);
-  font-size: 6rem;
+  font-size: 4rem;
   letter-spacing: 0.2rem;
   line-height: 3.5rem;
 }
 
 .intro p {
-  font-size: 1.5rem;
-  letter-spacing: 0.4rem;
-}
-
-.cod-lang{
-  margin-top: 50px;
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
 }
 
 .about-content h1 {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
+  padding-top: 2rem;
 }
+
+/*about button*/
+
+.btn {
+  background-color: #5c775b;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transform: skewY(6deg);
+}
+
+.btn:hover {
+  background-color: #3f5f3f;
+  color: white;
+}
+
+.fa-download {
+  padding-right: 10px;
+}
+/*work section*/
 
 .work-wrapper { 
   transform: skewY(6deg);
@@ -301,9 +336,9 @@ h2 {
 .work-wrapper h1 {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
-  margin: 50px 0 30px 0;
+  margin: 20px 0 10px 0;
 }
 
 .work-wrapper h2 {
@@ -320,13 +355,34 @@ h2 {
   display: flex;
   justify-content: center;
   font-size: 1.6rem;
-  letter-spacing: 1px;
-  line-height: 2.5rem;
+  line-height: 1.8rem;
   margin-bottom: 30px;
 }
 
+/*work cards decoration*/
 
+.card {
+  border: none;
+}
 
+.card-body {
+  background-color:rgba(0,0,0,.9);
+  color: #777;
+  padding-top: 2em;
+  font-family: wask_new_webfont, sans-serif;
+}
+
+.card-body h5 {
+  font-size: 2rem;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
+.card-link {
+    font-size: 1.5rem;
+}
 
 
 /*PROGRESS BAR*/
@@ -391,10 +447,6 @@ h2 {
 }
 
 
-
-footer {
-}
-
 .copyright-wrapper {
   text-align: center;
 }
@@ -407,12 +459,12 @@ footer {
 
 .social-icons {
   text-align: center;
-  margin: 50px 0 0 0;
+  margin-top: 2rem;
 }
 
 
 .social-icon {
-  margin: 25px 15px;
+  margin: 10px 10px;
   font-size: 1.7rem;
 }
 
@@ -538,34 +590,40 @@ div#navbarNavDropdown {
 
 
 ul.navbar-nav {
-
+  
   text-align: right;
 }
 
 /*ENDNAVBAR*/
 
 .footer-content {
- transform: skewY(6deg);
+  transform: skewY(6deg);
+  
+}
+
+footer {
+
+  position: relative;
+  bottom: 0px;
+  overflow: hidden;
 
 }
 
-.copyRight-content {
- transform: skewY(6deg);
+.row.copyRight-content {
+
+  text-align: center;
+  width: 100%;
+
 }
 
 
-
-
-
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) {
+  
+  /* Turn off parallax scrolling for tablets and phones */
   .parallax {
     background-attachment: scroll;
   }
-}
-
-@media only screen and (min-width: 1024px) {
-
+  
   a.nav-link {
     /* font-family: 'Nanum Gothic', sans-serif; */
     text-transform: lowercase;
@@ -573,46 +631,46 @@ ul.navbar-nav {
     margin: 30px 10px;
     font-size: 1.5rem;
   }
-
+  
   .navbar-brand {
     font-size: 1.5rem;
     margin-left: 1em;
   }
-
+  
   #parallax-1 {
     overflow: hidden;
     min-height: 70vh;
     top: -5em;
   }
-
+  
   .caption {
     background-color: rgba(0,0,0, 0.5);
     padding-right: 20px;
     padding-left: 20px;
   }
-
-
+  
+  
   .intro h1 {
     font-size: 10rem;
     letter-spacing: 1.5rem;
     line-height: 7rem; 
   }
-
+  
   .intro p {
     font-size: 3rem;
     letter-spacing: 0.7rem;
-
+    
   }
-
+  
   .about-content {
-    margin: 0 300px;
+    margin: 0 30px;
   }
-
+  
   .text {
     float: left;
     padding-right: 15px;
   }
-
+  
   .personal_image {
     display: block;
     max-width: 500px;
@@ -621,7 +679,7 @@ ul.navbar-nav {
     margin-bottom: 50px;
     padding-left: 15px;
   }
-
+  
   .text p {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -629,11 +687,11 @@ ul.navbar-nav {
     margin-top: 40px;
     padding-bottom: 200px;
   }
-
+  
   .caption-about img {
     margin-top: 50px;
   }
-
+  
   .intro {
     text-align: center;
     margin-top: 125px;
@@ -642,56 +700,94 @@ ul.navbar-nav {
     margin-top: 24em;
   }
   
-
+  
   .card {
     margin: 10px;
   }
-
+  
   .cod-lang {
     padding-top: 11em;
     padding-bottom: 4em;
   }
-
+  
   #parallax-4 {
-   position: relative;
- }
+    position: relative;
+  }
+  
+  h1.exp {
+    
+    margin-top: 0;
+    
+  }
+  
+  .work-wrapper { 
+    margin: 0 30px;
+  }
+  
+  
+  .contact-details {
+    float: right;
+  }
+  
+  .social-icons {
+    float: left;
+  }
+  
+  ul.navbar-nav {
+    position: absolute;
+    margin-right: 3em;
+  }
 
- h1.exp {
+  /*experience section*/
+  
+  .resume {
+    display: none;
+  }
+  
+  .resumeDesktop {
+    display: block;
+    position: relative;
+    transform: skewY(6deg);
+  }
+  
+  .experience {
+    display: flex;
+    width: 100%;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
 
-  margin-top: 0;
+  .exp {
+    margin: 0;
+    padding: 0;
+    width: 15em;
+  }
 
+  /*footer*/
+
+  .row.footer-content {
+    margin-top: 5em;
+  }
+
+  .copyright {
+    margin-top: 0px;
+  }
+  
 }
 
-.work-wrapper { 
-  margin: 0 300px;
+
+@media only screen and (min-width: 1024px) {
+  
+  .about-content {
+    margin: 0 300px;
+  }
+  
+  .work-wrapper { 
+    margin: 0 300px;
+  }
+  
+  .social-icons, .contact-details {
+    margin-top: 200px;
+  }
+  
 }
-
-
-.contact-details {
-  float: right;
-}
-
-.social-icons, .contact-details {
-  margin-top: 200px;
-}
-
-.social-icons {
-  float: left;
-  margin: 50px 0 0 30px;
-}
-
-ul.navbar-nav {
-  position: absolute;
-  margin-right: 3em;
-}
-
-.resume {
-  display: none;
-}
-
-.resumeDesktop {
-  display: block;
-}
-
-}
-
