@@ -24,6 +24,7 @@ body {
 a {
   color: inherit;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 a:hover {
@@ -48,11 +49,11 @@ p {
   font-size: 1.6rem;
 }
 
-.zoom {
+.zoomin {
   transition: transform 0.5s;
- }
+}
 
-.zoom:hover {
+.zoomin:hover {
   transform: scale(1.5);
 }
 
@@ -264,7 +265,6 @@ h2 {
   line-height: 1.8rem;
   letter-spacing: 0.02rem;
   font-size: 1.4rem;
-  padding-bottom: 30px;
   transform: skewY(6deg);
   margin-right: 20px;
   margin-left: 20px;
@@ -316,6 +316,7 @@ h2 {
   cursor: pointer;
   font-size: 1.2rem;
   transform: skewY(6deg);
+  font-size: 1rem;
 }
 
 .btn:hover {
@@ -381,7 +382,7 @@ h2 {
 }
 
 .card-link {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 
@@ -397,6 +398,16 @@ h2 {
 
 .coding-lan-icon {
   margin-right: 10px;
+}
+
+.coding-languages-wrapper{
+  padding-top: 2em;
+}
+
+
+
+.definition {
+  margin: 1.2em;
 }
 
 .html, .css, .js, .py, .flask, .django, .react {
@@ -590,7 +601,7 @@ div#navbarNavDropdown {
 
 
 ul.navbar-nav {
-  
+
   text-align: right;
 }
 
@@ -616,9 +627,20 @@ footer {
 
 }
 
+@media only screen and (min-width: 700px) {
+
+  .coding-languages-wrapper {
+    margin-top: 4em;
+  }
+
+  .coding-languages-wrapper h2 {
+    margin: 1.5em 0 1.5em 0;
+  }
+}
+
 
 @media only screen and (min-width: 768px) {
-  
+
   /* Turn off parallax scrolling for tablets and phones */
   .parallax {
     background-attachment: scroll;
@@ -649,17 +671,23 @@ footer {
     padding-left: 20px;
   }
   
+  .intro {
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 100px;
+    transform: skewY(6deg);
+    margin-top: 19em;
+  }
   
   .intro h1 {
-    font-size: 10rem;
-    letter-spacing: 1.5rem;
+    font-size: 8rem;
+    letter-spacing: 0.5rem;
     line-height: 7rem; 
   }
   
   .intro p {
-    font-size: 3rem;
-    letter-spacing: 0.7rem;
-    
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
   }
   
   .about-content {
@@ -670,36 +698,27 @@ footer {
     float: left;
     padding-right: 15px;
   }
+
+  .text p {
+    font-size: 1.6rem;
+    line-height: 1.5rem;
+  }
+  
   
   .personal_image {
     display: block;
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
-    float: right;
     margin-bottom: 50px;
     padding-left: 15px;
+    padding-top: 2em;
+    margin-right: 20px;
   }
   
-  .text p {
-    font-size: 2rem;
-    line-height: 2.5rem;
-    letter-spacing: 0.1rem;
-    margin-top: 40px;
-    padding-bottom: 200px;
-  }
-  
+
   .caption-about img {
     margin-top: 50px;
   }
-  
-  .intro {
-    text-align: center;
-    margin-top: 125px;
-    margin-bottom: 100px;
-    transform: skewY(6deg);
-    margin-top: 24em;
-  }
-  
   
   .card {
     margin: 10px;
@@ -712,12 +731,6 @@ footer {
   
   #parallax-4 {
     position: relative;
-  }
-  
-  h1.exp {
-    
-    margin-top: 0;
-    
   }
   
   .work-wrapper { 
@@ -752,15 +765,32 @@ footer {
   
   .experience {
     display: flex;
-    width: 100%;
-    margin-right: 10px;
-    margin-left: 10px;
+    justify-content: center;
   }
 
   .exp {
     margin: 0;
     padding: 0;
     width: 15em;
+  }
+
+  .exp h2{
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .exp p{
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .desktopResume {
+    display: flex;
+    justify-content: center;
+  }
+
+  .desktopResume img {
+    max-width: 60%;
   }
 
   /*footer*/
@@ -777,7 +807,7 @@ footer {
 
 
 @media only screen and (min-width: 1024px) {
-  
+
   .about-content {
     margin: 0 300px;
   }

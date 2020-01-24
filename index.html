@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    
+
     <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="navbar-brand" href="#">&lt; IB /&gt;</a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -64,10 +64,10 @@
     
     <div class="about-content">
         <div class="container-fluid">
+            <h1>ABOUT</h1>
             <div class="row no-gutters">
                 <div class="col-lg-8 col-md-8 col-sm-12">
                     <div id="about-section" class="text">
-                        <h1>ABOUT</h1>
                         <p>Ieva Broberg is a junior web developer who has found her passion for technology and coding after a seven year career within creative industry. She had started her journey to tech by commiting to the extensive full stack development training with 'Code Institute' and progressed by working on personal projects, getting involved in coding communities/workshops and dedicating all of her time to learning and self-development. Driven by passion and interest in the field she has landed her first dev job within a year and is excited about new opportunities and further progression on this newly found career path.</p>
                         
                         <form class="about-section-form" method="get" action="assets/work1.jpg">
@@ -75,7 +75,7 @@
                         </form>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="col-lg-4 col-md-4 col-sm-12">
                     <div class="personal_image">
                         <img src="assets/placeholder2.jpg" alt="">
                     </div>
@@ -85,7 +85,7 @@
     </div>
     
     <div class="parallax" id="parallax-2">
-        
+
         <div class="caption">
             <div class="zoom zoom2">
                 <img src="assets/2.jpg">
@@ -140,7 +140,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-12 coding-languages-wrapper">
-                        <h2>Coding Languages</h2>
+                        <h2 class="definition">Coding Languages</h2>
                         <div class="language html">
                             <i class="fab fa-html5 coding-lan-icon"></i>
                             <div id="myProgress" class="progress">
@@ -150,7 +150,7 @@
                         <div class="language css">
                             <i class="fab fa-css3-alt coding-lan-icon"></i>
                             <div id="myProgress" class="progress">
-                                <div id="myBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+                                <div id="myBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 100%"></div>
                             </div>
                         </div>
                         <div class="language js">
@@ -165,11 +165,11 @@
                                 <div id="myBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
                             </div>
                         </div>
-                        <h2>Frameworks</h2>
+                        <h2 class="definition">Frameworks</h2>
                         <div class="language flask">
                             <h2>FLASK</h2>
                             <div id="myProgress" class="progress">
-                                <div id="myBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 30%"></div>
+                                <div id="myBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
                             </div>
                         </div>
                         <div class="language django">
@@ -184,7 +184,7 @@
                                 <div id="myBar" class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 5%"></div>
                             </div>
                         </div>
-                        <h2>Adittional technologies</h2>
+                        <h2 class="definition" >Tools</h2>
                         <div class="additional-tech">
                             <i class="fab fa-bootstrap"></i>
                             <i class="fab fa-git"></i>
@@ -231,13 +231,15 @@
             
             <div class="resumeDesktop">
                 <div class="experience">
-                    <div id="resume-section" class="exp exp19">
-                        <h2>IGNIS ltd</h2>
-                        <p>junior front end developer</p>
-                    </div>
-                    <div class="exp exp19">
-                        <h2>Code Institute</h2>
-                        <p>Full stack coding bootcamp</p>
+                    <div class="expPair">
+                        <div id="resume-section" class="exp exp19">
+                            <h2>IGNIS ltd</h2>
+                            <p>junior front end developer</p>
+                        </div>
+                        <div class="exp exp19">
+                            <h2>Code Institute</h2>
+                            <p>Full stack coding bootcamp</p>
+                        </div>
                     </div>
                     <div class="exp exp17">
                         <h2>Swoon Editions</h2>
@@ -247,16 +249,20 @@
                         <h2>Pattern Design Studio</h2>
                         <p>Founder/Textile Designer</p>
                     </div>
-                    <div class="exp exp13">
-                        <h2>Santoro London</h2>
-                        <p>Lead Illustrator</p>
-                    </div>
-                    <div class="exp exp13">
-                        <h2>Middlesex University</h2>
-                        <p>BA Illustration diploma</p>
+                    <div class="expPair">
+                        <div class="exp exp13">
+                            <h2>Santoro London</h2>
+                            <p>Lead Illustrator</p>
+                        </div>
+                        <div class="exp exp13">
+                            <h2>Middlesex University</h2>
+                            <p>BA Illustration diploma</p>
+                        </div>
                     </div>
                 </div>
-                <img src="assets/desktopinfog.png">
+                <div class="desktopResume">
+                    <img src="assets/desktopinfog.png">
+                </div>
             </div>
         </div>
         
@@ -266,17 +272,17 @@
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div id="contact-section" class="contact-details">
                             <h2>Get in touch</h2>
-                            <a href="mailto:ievabroberg@gmail.com"><i class="social-icon fas fa-envelope zoom"></i></a>
-                            <a href="tel:+447455079898"><i class="social-icon fas fa-mobile-alt zoom"></i></a>
+                            <a href="mailto:ievabroberg@gmail.com"><i class="social-icon fas fa-envelope zoomin"></i></a>
+                            <a href="tel:+447455079898"><i class="social-icon fas fa-mobile-alt zoomin"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-6 col-md-6 col-sm-12">
                         <div class="social-icons">
                             <h2>Follow me</h2>
-                            <a href="#"><i class="social-icon fab fa-github-alt zoom"></i></a>
-                            <a href="#"><i class="social-icon fab fa-linkedin-in zoom"></i></a>
-                            <a href="#"><i class="social-icon fab fa-instagram zoom"></i></a>
-                            <a href="#"><i class="social-icon fab fa-twitter zoom"></i></a>
+                            <a href="#"><i class="social-icon fab fa-github-alt zoomin"></i></a>
+                            <a href="#"><i class="social-icon fab fa-linkedin-in zoomin"></i></a>
+                            <a href="#"><i class="social-icon fab fa-instagram zoomin"></i></a>
+                            <a href="#"><i class="social-icon fab fa-twitter zoomin"></i></a>
                         </div>
                     </div>
                     <div class="row copyRight-content">
