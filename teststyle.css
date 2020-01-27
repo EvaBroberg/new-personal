@@ -103,8 +103,6 @@ p {
 
 .zoom2 {
   position: absolute;
-  top: 0;
-  max-height: 37%;
 }
 
 .zoom3 {
@@ -381,7 +379,10 @@ h2 {
 }
 
 .coding-languages-wrapper{
+  transform: skewY(-6deg);
   padding-top: 2em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -704,6 +705,10 @@ footer {
   .card {
     margin: 2em 1em 2em 1em;
   }
+  /*PROGRESS*/
+  .coding-languages-wrapper {
+    width: 70%;
+  }
   
 }
 
@@ -741,7 +746,7 @@ footer {
 .work-section {
   display: flex;
   width: 75%;
-  margin: 2em auto;
+  margin: 2em auto 4em auto;
 }
 .about-section-form {
   margin-bottom: 6em;
@@ -751,6 +756,10 @@ footer {
 }
 .work-wrapper h1 {
   font-size: 3rem;
+}
+ /*PROGRESS*/
+ .coding-languages-wrapper {
+  width: 50%;
 }
 
 }
