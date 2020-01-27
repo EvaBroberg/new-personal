@@ -114,7 +114,6 @@
   
   .zoom img{
     position: absolute;
-    top: 0%;
     left: 50%;
     max-width: 200%;
     width: 100%;
@@ -203,12 +202,23 @@
   
   .caption {
     background-color: rgba(0,0,0, 0.3);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
     justify-content: center;
+    
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
     align-items: center;
+    
     height: 100%;
-    height: 18rem;
-}
+  }
   
   
   .caption .border {
@@ -219,11 +229,21 @@
     letter-spacing: 10px;
   }
   
+  .caption-about {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
   .about-section-form {
     text-align: center;
     margin-bottom: 4em;
   }
   
+  
+  .card {
+    margin: 20px;
+    /* transform: skewY(-6deg); */
+  }
   
   h2 {
     letter-spacing: 5px;
@@ -260,10 +280,11 @@
   
   .intro {
     text-align: center;
-    margin-top: 8em;
+    margin-top: 11em;
     margin-bottom: 0em;
     transform: skewY(6deg);
-}
+  }
+  
   
   .intro h1 {
     color: rgba(255, 255, 255, 0.3);
@@ -282,6 +303,7 @@
     justify-content: center;
     font-size: 2rem;
     letter-spacing: 2px;
+    padding-top: 1rem;
   }
   
   /*about button*/
@@ -342,7 +364,6 @@
   
   .card {
     border: none;
-    margin: ;
   }
   
   .card-body {
@@ -604,41 +625,4 @@
     text-align: center;
     width: 100%;
   
-  }
-/*   
-  @media only screen and (min-width: 700px) {
-  
-    .coding-languages-wrapper {
-      margin-top: 4em;
-    }
-  
-    .coding-languages-wrapper h2 {
-      margin: 1.5em 0 1.5em 0;
-    }
-  } */
-  
-  
-  @media only screen and (min-width: 700px) {
-     body {
-       display: none;
-     }
-    .about-content h1 {
-      font-size: 2.5rem;
-    }
-    .text p {
-      letter-spacing: 0.5px;
-      font-size: 1.5rem;
-    }
-    .btn {
-      margin-top: 0.5em;
-      margin-bottom: 0.5em;
-      font-size: 1rem;
-    }
-    .work-wrapper h1 {
-      display: flex;
-      font-size: 2.5rem;
-    }
-    .card {
-      margin: 2em;
-    }
   }

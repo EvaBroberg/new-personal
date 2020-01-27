@@ -11,7 +11,6 @@ body {
 }
 
 .bg-dark {
-  /* background-color: #0a0c0b!important; */
   opacity: .7;
 }
 
@@ -32,10 +31,6 @@ a:hover {
   text-decoration: underline;
 }
 
-img {
-  max-width: 100%;
-}
-
 
 body, html {
   height: 100%;
@@ -43,10 +38,6 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
   background-color:#0a0c0b;
-}
-
-p {
-  font-size: 1.6rem;
 }
 
 .zoomin {
@@ -59,19 +50,6 @@ p {
 
 .personal_image {
   display: none;
-}
-
-.col-lg-8.col-md-8.col-sm-12 {
-  padding: 0;
-}
-
-.col-lg-4.col-md-4.col-sm-12 {
-  padding: 0;
-}
-
-.row {
-  margin-right: 0px;
-  margin-left: 0px;
 }
 
 .parallax {
@@ -230,19 +208,12 @@ p {
 }
 
 .caption-about {
-  width: 100%;
-  margin: 0 auto;
+  height: 21em;
 }
 
 .about-section-form {
   text-align: center;
   margin-bottom: 4em;
-}
-
-
-.card {
-  margin: 20px;
-  /* transform: skewY(-6deg); */
 }
 
 h2 {
@@ -263,8 +234,8 @@ h2 {
 
 .text p {
   line-height: 1.8rem;
-  letter-spacing: 0.02rem;
-  font-size: 1.4rem;
+  letter-spacing: 1px;
+  font-size: 2rem;
   transform: skewY(6deg);
   margin-right: 20px;
   margin-left: 20px;
@@ -301,9 +272,8 @@ h2 {
 .about-content h1 {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
-  padding-top: 1rem;
 }
 
 /*about button*/
@@ -314,9 +284,10 @@ h2 {
   color: white;
   padding: 12px 30px;
   cursor: pointer;
-  font-size: 1.2rem;
   transform: skewY(6deg);
-  font-size: 1rem;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-size: 1.5rem;
 }
 
 .btn:hover {
@@ -337,7 +308,7 @@ h2 {
 .work-wrapper h1 {
   display: flex;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 3rem;
   letter-spacing: 2px;
   margin: 20px 0 10px 0;
 }
@@ -364,6 +335,7 @@ h2 {
 
 .card {
   border: none;
+  margin-bottom: 1em;
 }
 
 .card-body {
@@ -601,7 +573,7 @@ div#navbarNavDropdown {
 
 
 ul.navbar-nav {
-
+  
   text-align: right;
 }
 
@@ -613,17 +585,36 @@ ul.navbar-nav {
 }
 
 footer {
-
   position: relative;
   bottom: 0px;
   overflow: hidden;
-
 }
 
 .row.copyRight-content {
-
   text-align: center;
   width: 100%;
-
 }
+
+@media only screen and (min-width: 768px) {
+  .about-content h1 {
+    font-size: 2.5rem;
+  }
+  .text p {
+    letter-spacing: 0.5px;
+    font-size: 1.5rem;
+  }
+  .btn {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+  }
+  .work-wrapper h1 {
+    display: flex;
+    font-size: 2.5rem;
+  }
+  .card {
+    margin: 2em;
+  }
+}
+
 
