@@ -11,6 +11,7 @@ body {
 }
 
 .bg-dark {
+  /* background-color: #0a0c0b!important; */
   opacity: .7;
 }
 
@@ -31,6 +32,10 @@ a:hover {
   text-decoration: underline;
 }
 
+img {
+  max-width: 100%;
+}
+
 
 body, html {
   height: 100%;
@@ -38,6 +43,10 @@ body, html {
   font: 400 15px/1.8 "Lato", sans-serif;
   color: #777;
   background-color:#0a0c0b;
+}
+
+p {
+  font-size: 1.6rem;
 }
 
 .zoomin {
@@ -50,6 +59,19 @@ body, html {
 
 .personal_image {
   display: none;
+}
+
+.col-lg-8.col-md-8.col-sm-12 {
+  padding: 0;
+}
+
+.col-lg-4.col-md-4.col-sm-12 {
+  padding: 0;
+}
+
+.row {
+  margin-right: 0px;
+  margin-left: 0px;
 }
 
 .parallax {
@@ -72,6 +94,7 @@ body, html {
 }
 
 #parallax-4 {
+  transform: skewY(-6deg);
   transform-origin: top left;
 }
 
@@ -81,8 +104,6 @@ body, html {
 
 .zoom2 {
   position: absolute;
-  top: 0;
-  max-height: 37%;
 }
 
 .zoom3 {
@@ -92,6 +113,7 @@ body, html {
 
 .zoom img{
   position: absolute;
+  top: 0%;
   left: 50%;
   max-width: 200%;
   width: 100%;
@@ -110,7 +132,6 @@ body, html {
 .resume {
   transform: skewY(6deg);
   margin-left: 2.5em;
-  margin-top: 3em;
   display: flex;
 }
 
@@ -180,22 +201,11 @@ body, html {
 
 .caption {
   background-color: rgba(0,0,0, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
-  
   height: 100%;
+  height: 18rem;
 }
 
 
@@ -207,14 +217,11 @@ body, html {
   letter-spacing: 10px;
 }
 
-.caption-about {
-  height: 21em;
-}
-
 .about-section-form {
   text-align: center;
   margin-bottom: 4em;
 }
+
 
 h2 {
   letter-spacing: 5px;
@@ -234,11 +241,12 @@ h2 {
 
 .text p {
   line-height: 1.8rem;
-  letter-spacing: 1px;
-  font-size: 2rem;
+  letter-spacing: 0.02rem;
+  font-size: 1.4rem;
   transform: skewY(6deg);
-  margin-right: 20px;
-  margin-left: 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 2em;
 }
 
 .text h1 {
@@ -251,11 +259,10 @@ h2 {
 
 .intro {
   text-align: center;
-  margin-top: 11em;
+  margin-top: 8em;
   margin-bottom: 0em;
   transform: skewY(6deg);
 }
-
 
 .intro h1 {
   color: rgba(255, 255, 255, 0.3);
@@ -272,7 +279,7 @@ h2 {
 .about-content h1 {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
 }
 
@@ -284,10 +291,9 @@ h2 {
   color: white;
   padding: 12px 30px;
   cursor: pointer;
-  transform: skewY(6deg);
-  margin-top: 1em;
-  margin-bottom: 1em;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
+  font-size: 1rem;
+  margin: 1rem;
 }
 
 .btn:hover {
@@ -308,7 +314,7 @@ h2 {
 .work-wrapper h1 {
   display: flex;
   justify-content: center;
-  font-size: 3rem;
+  font-size: 2rem;
   letter-spacing: 2px;
   margin: 20px 0 10px 0;
 }
@@ -335,7 +341,7 @@ h2 {
 
 .card {
   border: none;
-  margin-bottom: 1em;
+  margin: ;
 }
 
 .card-body {
@@ -373,7 +379,10 @@ h2 {
 }
 
 .coding-languages-wrapper{
+  transform: skewY(-6deg);
   padding-top: 2em;
+  width: 90%;
+  margin: 0 auto;
 }
 
 
@@ -410,6 +419,7 @@ h2 {
 .additional-tech {
   text-align: center;
   font-size: 2rem;
+  margin-bottom: 2em;
 }
 
 .additional-tech i {
@@ -451,10 +461,11 @@ h2 {
   font-size: 1.7rem;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
 
 
-
-/*END PARALLAX*/
 
 button.navbar-toggler {
   border: none;
@@ -577,25 +588,39 @@ ul.navbar-nav {
   text-align: right;
 }
 
+
 /*ENDNAVBAR*/
 
-.footer-content {
-  transform: skewY(6deg);
-  
-}
-
 footer {
+  
   position: relative;
   bottom: 0px;
   overflow: hidden;
+  
 }
 
 .row.copyRight-content {
+  
   text-align: center;
   width: 100%;
+  
 }
 
+
 @media only screen and (min-width: 768px) {
+  /*INTRO*/
+  .intro h1 {
+    font-size: 8rem;
+    letter-spacing: 1rem;
+  }
+  .intro p {
+    font-size: 2rem;
+    letter-spacing: 0.7rem;
+  }
+  .caption {
+    height: 22rem;
+  }
+  /*ABOUT*/
   .about-content h1 {
     font-size: 2.5rem;
   }
@@ -608,6 +633,7 @@ footer {
     margin-bottom: 0.5em;
     font-size: 1rem;
   }
+  /*WORK*/
   .work-wrapper h1 {
     display: flex;
     font-size: 2.5rem;
@@ -615,6 +641,181 @@ footer {
   .card {
     margin: 2em;
   }
+  /*EXPERIENCE*/
+  .footer-content {
+    display: flex;
+    justify-content: center;
+}
+.contact-details {
+  margin-top: 0;
+  margin: 0 1em 0 1em;
+}
+.social-icons {
+  margin-top: 0;
+  margin: 0 1em 0 1em;
+}
 }
 
+@media only screen and (min-width: 1000px) {
+  /*INTRO*/
+  .caption {
+    height: 32rem;
+  }
+  .intro {
+    margin-top: 13em;
+  }
+  .intro h1 {
+    font-size: 10rem;
+    letter-spacing: 1.5rem;
+  }
+  .intro p {
+    font-size: 2.5rem;
+    letter-spacing: 01rem;
+    margin-top: 1rem;
+  }
+  /*ABOUT*/
+  .personal_image {
+    display: block;
+    transform: skewY(6deg);
+  }
+  div#about-section {
+    display: flex;
+    justify-content: center;
+  }
+  .text p {
+    width: 60%;
+    padding: 0 1rem 0 0;
+  }
+  .personal_image {
+    display: block;
+    transform: skewY(6deg);
+    width: 30%;
+    margin: 0 0 0 1rem;
+  }
+  .btn {
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 1.2rem;
+  }
+  /*WORK*/
+  .work-section {
+    display: flex;
+  }
+  
+  .card {
+    margin: 2em 1em 2em 1em;
+  }
+  /*PROGRESS*/
+  .coding-languages-wrapper {
+    width: 70%;
+  }
+  /*EXPERIENCE*/
+  .resumeDesktop{
+    display: block;
+  }
+  .resumeMobile {
+    display: none;
+  }
+  .experience {
+    display: flex;
+  }
+  .resume {
+    flex-direction: column-reverse;
+    margin: 0;
+    align-items: center;
+  }
+  .exp {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    max-width: 13em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+  }
+  .exp h2{
+    text-align: center;
+  }
+  .expCombo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .resume img {
+    width: 100%;
+    margin-top: 0;
+    margin-right: 0;
+  }
+  .resume img {
+    width: 66em;
+    padding-bottom: 5em;
+  }
+  .definition {
+    margin-top: 0;
+}
+.coding-languages-wrapper {
+  padding-top: 0;
+}
+.additional-tech i {
+  padding-bottom: 2em;
+}
+}
 
+@media only screen and (min-width: 1500px) {
+  .intro h1 {
+    font-size: 14rem;
+    letter-spacing: 2rem;
+  }
+  .intro p {
+    font-size: 3rem;
+    letter-spacing: 1.5rem;
+    margin-top: 1em;
+  }
+  .caption {
+    height: 46rem;
+  }
+  .intro {
+    margin-top: 17em;
+  }
+  /*ABOUT*/
+  .text p {
+    width: 40%;
+    font-size: 1.8rem;
+  }
+  .personal_image {
+    width: 15%;
+    margin-top: 4em;
+  }
+  
+  .btn {
+    margin-top: 0;
+    margin-bottom: 5em;
+    font-size: 1.2rem;
+  }
+  .work-section {
+    display: flex;
+    width: 75%;
+    margin: 2em auto 4em auto;
+  }
+  .about-section-form {
+    margin-bottom: 6em;
+  }
+  .about-content h1 {
+    font-size: 3rem;
+  }
+  .work-wrapper h1 {
+    font-size: 3rem;
+  }
+  /*PROGRESS*/
+  .coding-languages-wrapper {
+    width: 50%;
+  }
+  /*EXPERIENCE*/
+  .additional-tech i {
+    padding-bottom: 3em;
+  }
+  
+  
+}
