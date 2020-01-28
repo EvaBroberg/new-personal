@@ -24,32 +24,43 @@ $(window).scroll(function() {
 	});
 });
 
+//toggle active button
+
+   $(document).on('click', '#nav li', function() {
+       $("#nav li").removeClass("active");
+       $(this).addClass("active");
+   });
+
+
+
 //scroller
 
-// $("#about").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#about-section").offset().top
-//     }, 2000);
-//     return false;
-// });
+$("#about").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#about-section").offset().top
+    }, 2000);
+  
+});
 
-// $("#work").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#work-section").offset().top
-//     }, 2000);
-//     return false;
-// });
+$("#work").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#work-section").offset().top
+    }, 2000);
+});
 
-// $("#resume").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#resume-section").offset().top
-//     }, 2000);
-//     return false;
-// });
+$("#resume").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#resume-section").offset().top
+    }, 2000);
+});
 
-// $("#contact").click(function() {
-//     $('html, body').animate({
-//         scrollTop: $("#contact-section").offset().top
-//     }, 2000);
-//     return false;
-// });
+$("#contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact-section").offset().top
+    }, 2000);
+});
+
+
+
+
+

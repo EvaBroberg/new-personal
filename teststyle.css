@@ -461,6 +461,9 @@ h2 {
   font-size: 1.7rem;
 }
 
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+}
 
 
 
